@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-CSS-JAVASCRIPT-22092025</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="action.php" method="post" id="myForm">
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="level">Līmenis</label>
+          <select name="level" id="level">
+            <option value="easy">Viegls</option>
+            <option value="normal">Vidējs</option>
+            <option value="hard">Grūts</option>
+          </select>
+        </div>
+        <div>
+          <label for="feedback">Atsauksme</label>
+          <input type="text" name="feedback" id="feedback" />
+        </div>
+        <div class="submit-input">
+          <input type="submit" value="Submit Form" />
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

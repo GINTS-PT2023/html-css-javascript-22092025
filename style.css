@@ -1,0 +1,32 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+
+    border: 3px solid black;
+    width: 80%;
+    max-width: 400px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#myForm div{
+    margin: .5em;
+}
+
+.submit-input{
+    text-align: center;
+}
