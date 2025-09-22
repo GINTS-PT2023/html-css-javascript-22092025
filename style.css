@@ -25,8 +25,14 @@ body{
 
 #myForm div{
     margin: .5em;
+    font-size: 1rem;
+}
+
+#myForm label{
+    font-weight: bold;
 }
 
 .submit-input{
     text-align: center;
 }
+
