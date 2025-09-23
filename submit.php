@@ -1,18 +1,4 @@
-
 <?php
-
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-//     $fname = htmlspecialchars($_POST['fname']);
-//     $email = htmlspecialchars($_POST['email']);
-//     $level = htmlspecialchars($_POST['level']);
-//     $feedback = htmlspecialchars($_POST['feedback']);
-
-//     echo ("First Name: $fname" . "<br />\n");
-//     echo ("Email: $email" . "<br />\n");
-//     echo ("Level: $level" . "<br />\n");
-//     echo ("Feedback: $feedback" . "<br />\n");
-// }
 
 $servername = "localhost";
 $username = "gintsbrunovskispt2023";
@@ -35,14 +21,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           VALUES ('$fname', '$email', '$level', '$feedback')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "created successfully!";
+        echo "created successfully!" . "<br />\n";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     $conn->close();
+
+    echo ("First Name: $fname" . "<br />\n");
+    echo ("Email: $email" . "<br />\n");
+    echo ("Level: $level" . "<br />\n");
+    echo ("Feedback: $feedback" . "<br />\n");
 }
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="/list.php">Form Data List</a>
+    <a href="/">Home</a>
+
+</body>
+
+</html>
